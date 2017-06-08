@@ -64,14 +64,44 @@ of your readme for previewing in your browser. Just open the file.
 All options
 -----------
 
-  Option             Effect
-  ------------------ ----------------------------------------------------------------------------------------------------------
-  `--output | -o`    file path of the output file
-  `--input | -i`     file path of the input file
-  `--toc | -t`       create table of contents
-  `--toc-depth`      how many headers are included in the table of contents
-  `--verbose | -v`   print all options
-  `--toc-only`       NOT IMPLEMENTED YET. Only generate the toc (and optionally add it to the existing readme file)
+<table>
+<colgroup>
+<col width="14%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>--output | -o</code></td>
+<td>file path of the output file</td>
+</tr>
+<tr class="even">
+<td><code>--input | -i</code></td>
+<td>file path of the input file</td>
+</tr>
+<tr class="odd">
+<td><code>--toc | -t</code></td>
+<td>create table of contents</td>
+</tr>
+<tr class="even">
+<td><code>--toc-depth</code></td>
+<td>how many headers are included in the table of contents</td>
+</tr>
+<tr class="odd">
+<td><code>--verbose | -v</code></td>
+<td>print all options</td>
+</tr>
+<tr class="even">
+<td><code>--toc-only</code></td>
+<td>NOT IMPLEMENTED YET. Only generate the toc (and optionally add it to the existing readme file)</td>
+</tr>
+</tbody>
+</table>
 
 Output file
 -----------

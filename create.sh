@@ -75,6 +75,7 @@ fi
 pandoc \
     -o $outfile \
     -f markdown_github-hard_line_breaks \
+    -t markdown_github-hard_line_breaks \
     --css github.css \
     --self-contained \
     ${toc:+"$toc"} \

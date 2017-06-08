@@ -64,18 +64,14 @@ of your readme for previewing in your browser. Just open the file.
 All options
 -----------
 
-`--output    | -o` file path of the output file
-
-`--input     | -i` file path of the input file
-
-`--toc       | -t` create table of contents
-
-`--toc-depth |` how many headers are included in the table of contents
-
-`--verbose   | -v` print all options
-
-`--toc-only  |` NOT IMPLEMENTED YET. Only generate the toc (and
-optionally add it to the existing readme file)
+  Option             Effect
+  ------------------ ----------------------------------------------------------------------------------------------------------
+  `--output | -o`    file path of the output file
+  `--input | -i`     file path of the input file
+  `--toc | -t`       create table of contents
+  `--toc-depth`      how many headers are included in the table of contents
+  `--verbose | -v`   print all options
+  `--toc-only`       NOT IMPLEMENTED YET. Only generate the toc (and optionally add it to the existing readme file)
 
 Output file
 -----------

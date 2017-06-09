@@ -63,25 +63,29 @@ while true; do
     esac
 done
 
+cssLocation=$(dirname $0)
+
 if [[ $printOptions -eq 1 ]]; then
     echo outfile = $outfile
     echo infile = $infile
     echo tocDepth = $tocDepth
     echo tocOnly = $tocOnly
     echo toc = $toc
+    echo cssLocation = $cssLocation/github.css
 fi
 
 # if creating markdown file, always generate github markdown
+# remove hard line breaks to mimik github
 if [[ "$outfile" == *.md ]]; then
     markdownFormat="--to=markdown_github-hard_line_breaks"
 fi
 
-# remove hard line breaks to mimik github
+
 pandoc \
     -o $outfile \
     --from=markdown_github-hard_line_breaks \
     ${markdownFormat:+"$markdownFormat"} \
-    --css github.css \
+    --css $cssLocation/github.css \
     --self-contained \
     ${toc:+"$toc"} \
     --toc-depth=$tocDepth \

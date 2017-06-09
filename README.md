@@ -45,12 +45,15 @@ command line: `./markdz.sh -o README.md -i readme-source.md -v --toc`
 
 As the `-v` flag is used, this output is produced:
 
-    $ ./markdz.sh -o README.md -i readme-source.md -v --toc
-    outfile = README.md
-    infile = readme-source.md
-    tocDepth = 3
-    tocOnly = 0
-    toc = --toc
+``` bash
+$ ./markdz.sh -o README.md -i readme-source.md -v --toc
+outfile = README.md
+infile = readme-source.md
+tocDepth = 3
+tocOnly = 0
+toc = --toc
+cssLocation = ./github.css
+```
 
 As mentioned, the resulting `README.md` is the file you are currently
 viewing.
@@ -58,7 +61,7 @@ viewing.
 Usage
 =====
 
-Calling `create.sh` without any arguments will produce an html version
+Calling `markdz.sh` without any arguments will produce an html version
 of your readme for previewing in your browser. Just open the file.
 
 All options

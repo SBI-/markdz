@@ -71,11 +71,16 @@ if [[ $printOptions -eq 1 ]]; then
     echo toc = $toc
 fi
 
+# if creating markdown file, always generate github markdown
+if [[ "$outfile" == *.md ]]; then
+    markdownFormat="--to=markdown_github-hard_line_breaks"
+fi
+
 # remove hard line breaks to mimik github
 pandoc \
     -o $outfile \
-    -f markdown_github-hard_line_breaks \
-    -t markdown_github-hard_line_breaks \
+    --from=markdown_github-hard_line_breaks \
+    ${markdownFormat:+"$markdownFormat"} \
     --css github.css \
     --self-contained \
     ${toc:+"$toc"} \
